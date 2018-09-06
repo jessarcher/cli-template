@@ -18,5 +18,8 @@
     },
     "bin": [
         "bin/myapp"
-    ]
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
 }
