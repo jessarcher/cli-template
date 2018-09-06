@@ -8,7 +8,7 @@ install:
     - composer install --no-interaction
     - composer info
 
-before_script: composer require kherge/box
+before_script: composer global require kherge/box
 
 script:
     - phpunit
