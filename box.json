@@ -12,6 +12,7 @@
             "in": "vendor"
         }
     ],
+    "git-version": "package_version",
     "main": "bin/myapp",
     "output": "build/myapp.phar",
     "stub": true

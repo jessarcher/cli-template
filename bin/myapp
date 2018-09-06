@@ -6,7 +6,7 @@ use Symfony\Component\Console\Application;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = new Application('MyApp', '1.0');
+$app = new Application('MyApp', '@package_version@');
 
 $app->add(new GreetCommand);
 
