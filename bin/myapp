@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+use App\GreetCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = new Application('MyApp', '1.0');
+
+$app->add(new GreetCommand);
+
+$app->run();

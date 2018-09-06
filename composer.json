@@ -1,0 +1,22 @@
+{
+    "name": "jessarcher/cli-template",
+    "description": "A template for creating CLI apps",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jess Archer",
+            "email": "jess@jessarcher.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "^4.1"
+    },
+    "bin": [
+        "bin/myapp"
+    ]
+}
