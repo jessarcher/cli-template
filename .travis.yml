@@ -16,6 +16,7 @@ script:
     - phpunit
     - composer install --no-interaction --no-dev
     - box build -v
+    - sha1sum build/myapp.phar > build/myapp.phar.version
     - rm build/.gitignore
 
 deploy:
