@@ -16,6 +16,7 @@ script:
     - phpunit
     - composer install --no-interaction --no-dev
     - box build -v
+    - rm build/.gitignore
 
 deploy:
     provider: pages
