@@ -8,12 +8,14 @@ install:
     - composer install --no-interaction
     - composer info
 
-before_script: composer global require kherge/box
+before_script:
+    - composer global require kherge/box
+    - export PATH=$PATH:$HOME/.composer/vendor/bin/
 
 script:
     - phpunit
     - composer install --no-interaction --no-dev
-    - ~/.composer/bin/box build -v
+    - box build -v
 
 notifications:
     email: true
