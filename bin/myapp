@@ -2,6 +2,7 @@
 <?php
 
 use App\GreetCommand;
+use App\UpdateCommand;
 use Symfony\Component\Console\Application;
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -9,5 +10,6 @@ require __DIR__ . '/../vendor/autoload.php';
 $app = new Application('MyApp', '@package_version@');
 
 $app->add(new GreetCommand);
+$app->add(new UpdateCommand);
 
 $app->run();
