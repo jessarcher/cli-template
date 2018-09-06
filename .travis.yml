@@ -8,5 +8,10 @@ install:
     - composer install --no-interaction
     - composer info
 
+script:
+    - phpunit
+    - composer install --no-interaction --no-dev
+    - box build -v
+
 notifications:
     email: true
