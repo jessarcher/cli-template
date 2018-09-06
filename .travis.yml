@@ -17,5 +17,14 @@ script:
     - composer install --no-interaction --no-dev
     - box build -v
 
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+        branch: master
+    local-dir: build
+
 notifications:
     email: true
