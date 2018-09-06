@@ -1,5 +1,7 @@
 # cli-template
 
+[![Build Status](https://travis-ci.org/jessarcher/cli-template.svg?branch=master)](https://travis-ci.org/jessarcher/cli-template)
+
 A template for creating a CLI application using Symfony
 
 ## Building
